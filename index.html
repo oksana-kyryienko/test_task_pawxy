@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Search Engine</title>
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+    <!-- <script src="https://www.google.com/jsapi"></script> -->
+  </head>
+  <body>
+    <div class="content">
+      <header class="header">
+        <div class="title">
+          <div>
+            <img class="logo" src="./src/images/logo.png" alt="logo" />
+          </div>
+          <h2>Simple Video Search Engine</h2>
+        </div>
+      </header>
+      <div class="container">
+        <div class="search-container">
+          <input
+            class="search-input"
+            type="text"
+            id="search-input"
+            placeholder="Search for videos..."
+          />
+          <button value="Пошук" onclick="searchGoogle()" class="button" id="search-button">
+            <img src="./src/images/Search.svg" alt="search" />
+          </button>
+        </div>
+        <div id="results-container"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p id="search-text" class="search-text"></p>
+    </footer>
+
+    <script src="/src/scripts/main.js"></script>
+  </body>
+</html>
