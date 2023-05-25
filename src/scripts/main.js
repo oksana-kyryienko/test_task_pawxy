@@ -197,9 +197,14 @@ function formatViewCount(count) {
   }
 }
 
+
+
+searchButton.addEventListener("click", searchGoogle);
+
+
 function searchGoogle() {
-  let searchInput = document.getElementById('search-input').value;
-  let searchText = document.getElementById('search-text');
+  let searchInput = document.getElementById("search-input").value;
+  let searchText = document.getElementById("search-text");
   let searchQuery = "Find in Google " + searchInput + "...";
   searchText.textContent = searchQuery;
   searchText.onclick = function() {
